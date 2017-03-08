@@ -34,7 +34,6 @@ public class PaymentRecordAssignment {
         PaymentDAO paymentDAO = new PaymentDAOImpl();
         System.out.println("Student Id");
         int student_id = input.nextInt();
-
         try {
             Student student = studentDAO.getById(student_id);
             System.out.println(student.getFirst_name() + " " + student.getLast_name());
